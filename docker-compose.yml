@@ -1,0 +1,21 @@
+version: "2"
+services:
+#rtaplamaci-node-note-app adında servis tanımlıyoruz
+  rtaplamaci-node-note-app:
+    container_name: ramazan-taplamaci-node-note-app
+# servis durduğundan tekrar başlatılacak
+    restart: always
+# aynı dizinde bulunan Dockerfile ile image oluşturulacak
+    build: .
+# 3000 portunu 3000 portuna yönlendiriliyoruz
+    ports:
+      - "3000:3000"
+# mongo servisi ile ilişkilendiriliyoruz
+    links:
+      - mongo
+  mongo:
+    container_name: mongo
+# DockerHubda bulunan latest mongo imajı kullanılacak
+    image: mongo
+    ports:
+      - "27017:27017"
