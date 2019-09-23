@@ -1,8 +1,8 @@
 ## Cloud Native Engineer Intern Case Study
-Tüm bu işlemler Ubuntu 18.04.3 LTS işletim sisteminde gerçekleştirilmiştir.
+Tüm bu işlemler Ubuntu 18.04.3 LTS işletim sisteminde gerçekleştirilmiştir.\n
 NodeJs+MongoDB Projesi Deploy Etme Görevi
 
-Bu görev için öncelikli olarak Dosya sisteminde bir klasör oluşturdum. Ardından ilgili proje dosyalarını ilgili dizine taşıdım. Bu noktada index.js dosyasını hazırlarken MongoDb'ye bağlanmak için bağlantı cümlesinde(urlinde) Ip adresi yerine daha sonra Composer ile projemize ilişkilendireceğimiz mongo containerinin adını verdim.
+*Bu görev için öncelikli olarak Dosya sisteminde bir klasör oluşturdum. Ardından ilgili proje dosyalarını ilgili dizine taşıdım. Bu noktada index.js dosyasını hazırlarken MongoDb'ye bağlanmak için bağlantı cümlesinde(urlinde) Ip adresi yerine daha sonra Composer ile projemize ilişkilendireceğimiz mongo containerinin adını verdim.
 
 *Ardından terminal ekranından Nano editörü ile Dockerfile dosyasını oluşturdum ve içeriğini aşağıdaki gibi düzenledim.
 
@@ -68,7 +68,7 @@ services:
     ports:
       - "27017:27017"
  ```
- * Ardından aşağıdaki komut ile docker-compose.yml dosyamı çalıştırdım ve her iki containerımda çalışmaya başladı.
+ *Ardından aşağıdaki komut ile docker-compose.yml dosyamı çalıştırdım ve her iki containerımda çalışmaya başladı.
  ```bash
 docker -compose up
  ```
