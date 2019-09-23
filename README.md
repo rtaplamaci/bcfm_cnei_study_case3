@@ -1,5 +1,6 @@
 ## Cloud Native Engineer Intern Case Study
-Tüm bu işlemler Ubuntu 18.04.3 LTS işletim sisteminde gerçekleştirilmiştir.\n
+Tüm bu işlemler Ubuntu 18.04.3 LTS işletim sisteminde gerçekleştirilmiştir.
+
 NodeJs+MongoDB Projesi Deploy Etme Görevi
 
 *Bu görev için öncelikli olarak Dosya sisteminde bir klasör oluşturdum. Ardından ilgili proje dosyalarını ilgili dizine taşıdım. Bu noktada index.js dosyasını hazırlarken MongoDb'ye bağlanmak için bağlantı cümlesinde(urlinde) Ip adresi yerine daha sonra Composer ile projemize ilişkilendireceğimiz mongo containerinin adını verdim.
