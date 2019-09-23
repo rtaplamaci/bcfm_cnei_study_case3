@@ -3,9 +3,9 @@ Tüm bu işlemler Ubuntu 18.04.3 LTS işletim sisteminde gerçekleştirilmiştir
 
 NodeJs+MongoDB Projesi Deploy Etme Görevi
 
-*Bu görev için öncelikli olarak Dosya sisteminde bir klasör oluşturdum. Ardından ilgili proje dosyalarını ilgili dizine taşıdım. Bu noktada index.js dosyasını hazırlarken MongoDb'ye bağlanmak için bağlantı cümlesinde(urlinde) Ip adresi yerine daha sonra Composer ile projemize ilişkilendireceğimiz mongo containerinin adını verdim.
+* Bu görev için öncelikli olarak Dosya sisteminde bir klasör oluşturdum. Ardından ilgili proje dosyalarını ilgili dizine taşıdım. Bu noktada index.js dosyasını hazırlarken MongoDb'ye bağlanmak için bağlantı cümlesinde(urlinde) Ip adresi yerine daha sonra Composer ile projemize ilişkilendireceğimiz mongo containerinin adını verdim.
 
-*Ardından terminal ekranından Nano editörü ile Dockerfile dosyasını oluşturdum ve içeriğini aşağıdaki gibi düzenledim.
+* Ardından terminal ekranından Nano editörü ile Dockerfile dosyasını oluşturdum ve içeriğini aşağıdaki gibi düzenledim.
 
 ```bash
 #Projenin kullanacağı pakte
@@ -38,14 +38,14 @@ CMD [ "index.js" ]
 
 ```
 
-*Ardından istemediğim dosyaların Docker İmajına kopyalanmaması için terminal üzerinde nano editörü ile .dockerignore dosyasını oluşturdum ve içeriğini aşağıdaki gibi düzenledim.
+* Ardından istemediğim dosyaların Docker İmajına kopyalanmaması için terminal üzerinde nano editörü ile .dockerignore dosyasını oluşturdum ve içeriğini aşağıdaki gibi düzenledim.
 ```bash
 Dockerfile
 node_modules
 npm-debug.log
  ```
  
-*Ardından terminal üzerinde nano editörü ile docker-compose.yml dosyasını oluşturdum ve içeriğini aşağıdaki gibi düzenledim.
+* Ardından terminal üzerinde nano editörü ile docker-compose.yml dosyasını oluşturdum ve içeriğini aşağıdaki gibi düzenledim.
 ```bash
 version: "2"
 services:
@@ -69,7 +69,7 @@ services:
     ports:
       - "27017:27017"
  ```
- *Ardından aşağıdaki komut ile docker-compose.yml dosyamı çalıştırdım ve her iki containerımda çalışmaya başladı.
+ * Ardından aşağıdaki komut ile docker-compose.yml dosyamı çalıştırdım ve her iki containerımda çalışmaya başladı.
  ```bash
 docker -compose up
  ```
